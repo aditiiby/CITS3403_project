@@ -3,3 +3,20 @@ hello
 
 line 1
 
+
+
+
+layout:
+have a home page with info about what the site is about e.g. what content to learn
+
+log in page
+
+have a lessons page with boxes like in Layout1.png 
+each lesson has is its own page, once a lesson is complete(grey or make a tick box to show completion )
+at the bottom of lessons page have a link to questions page 
+
+test page, will be a mix of different formats of questions, short answer, multiple choise
+
+feedback page
+
+results page
