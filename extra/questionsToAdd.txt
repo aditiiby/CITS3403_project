@@ -29,7 +29,7 @@ Lessons
 3. Helium 
 4. carbon 
 5. Nitrogen 
-6. Ion
+6. Iron
 
 Hydron notes:
 - Lightest element on earth 
@@ -75,3 +75,18 @@ Carbon notes :
     used for their hardness in cutting tools and precision instruments.
 - Carbon makes up about 18% of the human body. So if you weigh 100 pounds, your body contains
     around 18 pounds of carbon.
+
+
+Nitrogen:
+Almost 80% of our atmosphere 
+Used to keep foods fresh(used in chip packets)
+In its liquid form it is around minus 200 degrees Celsius, it is used in scientific facilities to store cells (sperm, egg)
+Saturns moon titan has an atmosphere of 98% nitrogen it is the only moon in our solar system with a dense atmosphere
+
+Iron:
+FE
+Most abundant of all metals
+Necessary for life
+	Exists in red blood cells (it is the reason they are red)
+Earths inner and outer core are mostly comprised of iron
+Steel is an alloy of iron and carbon. (!!!can ask what compounds make steel)
