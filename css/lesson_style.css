@@ -21,3 +21,14 @@ body{
     width: 3rem;
     height: 3rem;
 }
+
+h1{
+    text-align: center;
+}
+
+table, td{
+    border: 2px;
+    border-color: black;
+    border-style:solid;
+    text-align: center;
+  }
