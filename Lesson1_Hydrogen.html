@@ -15,7 +15,7 @@
 
 <body>
     <h1><b>Hydrogen</b></h1>
-    <table>
+    <table id ="id3">
         <tr>
             <td>Symbol</td>
             <td> H </td>
@@ -59,20 +59,32 @@
     </p>
     
     <!-- Begining the quiz -->
-    <p id = "id2">When your ready click the button below to take a test on the information you have learnt about hydrogen.</p>
-    <button type="button" onclick="removeInfo()">Start Quiz</button>
-    <script>
-        var factsTitle = document.getElementById('id');
-        var factsList = document.getElementById('id1');
-        var clickWhenReady = document.getElementById('id2');
-
-        function removeInfo() {
-            factsTitle.remove();
-            factsList.remove();
-            clickWhenReady.remove();
-        }
-    </script>
+    <p id = "id2">
+        When your ready click the button below to take a test on the information you have 
+        learnt about hydrogen. The Quiz consistsof three multi choice question in which you
+        have 10 second to answer. Best of luck!!
+    </p>
 
     <!-- Creating the Quiz-->
+    <div id="container">
+        <button id="start" onclick="removeInfo">Start Quiz</button>
+
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="quiz.js"></script>
 
 </body>
