@@ -42,12 +42,37 @@
         </tr>
     </table>
 
-    <button type="button" onclick="congratsfunction()">Completed</button>
-    <p id = 'buttonresponse'></p>
-
+    <p>
+        <h2 id = 'id'>Facts about Hydrogen</h2>
+        <ul id = 'id1'>
+            <li>Hydrogren is the lightest element on earth.</li>
+            <li>It consists of one proton and one eletron.</li>
+            <li>When Hydrogren and Oxygen come together that make water.</li>
+            <li>It makes up more than 90% of all elements in the universe.</li>
+            <li>Hydrogen gas is what makes up the stars that we see in the night sky. </li>
+            <li>Hydrogen makes up our sun.</li>
+            <li>At standard temperature and pressure hydrogren is a colorless, odorless, and tastless</li>
+            <li>Hydrogen is also used as a rocket fuel where liquid hydrogen is combined with liquid oxygen
+                to produce a powerful explosion. Scientists hope that someday hydrogen can be used as a 
+                clean fuel alternative to gasoline.</li>
+        </ul>
+    </p>
+    
+    <!-- Begining the quiz -->
+    <p id = "id2">When your ready click the button below to take a test on the information you have learnt about hydrogen.</p>
+    <button type="button" onclick="removeInfo()">Start Quiz</button>
     <script>
-        function congratsfunction() {
-          document.getElementById("buttonresponse").innerHTML = "Congrats on finishing Lesson 1";
+        var factsTitle = document.getElementById('id');
+        var factsList = document.getElementById('id1');
+        var clickWhenReady = document.getElementById('id2');
+
+        function removeInfo() {
+            factsTitle.remove();
+            factsList.remove();
+            clickWhenReady.remove();
         }
     </script>
+
+    <!-- Creating the Quiz-->
+
 </body>
