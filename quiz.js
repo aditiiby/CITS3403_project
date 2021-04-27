@@ -1,21 +1,32 @@
-const startbutton = document.getElementById('start')
-var factsTitle = document.getElementById('id');
-var factsList = document.getElementById('id1');
-var clickWhenReady = document.getElementById('id2');
-var table = document.getElementById("id3");
+// Elements to the information before begining the Quiz
+const info1 = document.getElementById('id');
+const info2 = document.getElementById('id1');
+const info3 = document.getElementById('id2');
+const info4 = document.getElementById("id3");
+
+//the button to start the quiz 
+const startbutton = document.getElementById("start")
+
+// The Quiz element
 var quiz = document.getElementById("quiz");
 
 function startQuiz(){
-    factsTitle.remove();
-    factsList.remove();
-    clickWhenReady.remove();
-    table.remove();
-    start.style.display = "none";
+    //Hiding the infomation elements
+    info1.remove();
+    info2.remove();
+    info3.remove();
+    info4.remove();
+
+    //Hide the button
+    startbutton.style.display = "none";
+    //Displaying the Quiz
     quiz.style = "display";
+    //Display the Quiz
     displayQuestion();
 }
 
-let options = [
+// The questions, multi choice answers and the answer for the quiz
+let quizQuestions = [
     {
         question: "What is the lightest elemnt on earth?",
         choiceA : "Hydrogen",
@@ -31,53 +42,17 @@ let options = [
     }
 ];
 
+//present the questions for the quiz
+//Elements
 const question = document.getElementById('question');
 const choiceA = document.getElementById('A');
 const choiceB = document.getElementById('B');
 const choiceC = document.getElementById('C');
-const score = document.getElementById("score");
-
-// question counter 
-let x = 0;
 
 function displayQuestion(){ 
-    questionNum.innerHTML = "Question";
-    question.innerHTML = options[x].question;
-    choiceA.innerHTML = options[x].choiceA;
-    choiceB.innerHTML = options[x].choiceB;
-    choiceC.innerHTML = options[x].choiceC;
+    let q = quizQuestions[0];
+    question.innerHTML = "Question :" + q.question;
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
 }
-
-// score counter
-let grade = 0;
-
-// Checking the To see if the answer is correct.
-function checkAnswerA(){
-    if(options[0].choiceA == options[0].correct){
-        grade = grade +1
-        score.innerHTML = grade;
-    }
-    else{
-        score.innerHTML = grade
-    }
-}
-
-function checkAnswerB(){
-    if(options[0].choiceB == options[0].correct){
-        grade = grade +1
-        score.innerHTML = grade;
-    }
-    else{
-        score.innerHTML = grade
-    }
-}
-function checkAnswerC(){
-    if(options[0].choiceC == options[0].correct){
-        grade = grade + 1
-        score.innerHTML = grade;
-    }
-    else{
-        score.innerHTML = grade
-    }
-}
-
