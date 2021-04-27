@@ -66,25 +66,18 @@
     </p>
 
     <!-- Creating the Quiz-->
-    <div id="container">
-        <button id="start" onclick="removeInfo">Start Quiz</button>
-
-        <div id="quiz" style="display: none">
+    <div id="quizCon">
+        <button id="start" onclick="startQuiz()">Start Quiz!</button>
+        <div id ="quiz" style ="display: none;">
+            <div id="questionNum"></div>
             <div id="question"></div>
-            <div id="choices">
-                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
-            </div>
-            <div id="timer">
-                <div id="counter"></div>
-                <div id="btimeGauge"></div>
-                <div id="timeGauge"></div>
-            </div>
-            <div id="progress"></div>
+            <div id="A" onclick="checkAnswerA()"></div>
+            <div id="B" onclick="checkAnswerB()"></div>
+            <div id="C" onclick="checkAnswerC()"></div>
+            <div id="score"></div>
         </div>
-        <div id="scoreContainer" style="display: none"></div>
     </div>
     <script src="quiz.js"></script>
 
 </body>
+
