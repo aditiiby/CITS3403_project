@@ -32,13 +32,20 @@ let quizQuestions = [
         choiceA : "Hydrogen",
         choiceB : "Helium",
         choiceC : "Oxygen",
-        correct : "Hydrogen"
+        correct : "A"
     },{
         question : "What combines with hydrogen to create water?",
         choiceA : "Helium",
         choiceB : "Oxygen",
         choiceC : "Air",
         correct : "B"
+    },
+    {
+        question : "What two particles combine to create a hydrogen atom?",
+        choiceA : "Oxygen and Helium",
+        choiceB : "Atom and Molecule",
+        choiceC : "Proton and Electron",
+        correct : "C"     
     }
 ];
 
@@ -48,11 +55,45 @@ const question = document.getElementById('question');
 const choiceA = document.getElementById('A');
 const choiceB = document.getElementById('B');
 const choiceC = document.getElementById('C');
+const score = document.getElementById("score");
 
+//Creating varaible to assist changing questions
+let currentQuestion = 0;
+let grade = 0;
+
+
+//Function to display the quiz
 function displayQuestion(){ 
-    let q = quizQuestions[0];
-    question.innerHTML = "Question :" + q.question;
+    let q = quizQuestions[currentQuestion];
+    question.innerHTML = "Question " + (currentQuestion + 1) + ": " + q.question;
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
+}
+
+//Checking the Answers and moving onto the next question
+function checkAnswer(answer){
+    if(answer==quizQuestions[currentQuestion].correct){
+        grade++;
+    }
+    if(currentQuestion < (quizQuestions.length -1)){
+        currentQuestion++;
+        displayQuestion();
+    }
+    else{
+        displayResults();
+    }
+}
+
+//Displaying the results
+//elements
+const endQuizContent = document.getElementById("endQuizContent");
+const displayGrade = document.getElementById("displayGrade");
+
+//Resultsed displayed 
+//Still need to round the results to 2 decimal places
+function displayResults(){
+    quiz.style.display = "none";
+    endQuizContent.style = 'display';
+    displayGrade.innerHTML = "Your Grade was " + ((grade/quizQuestions.length)*100) + "%";
 }

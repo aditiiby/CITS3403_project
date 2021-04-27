@@ -71,10 +71,15 @@
 
         <div id ="quiz" style ="display: none;">
             <div id="question"></div>
-            <div id="A" onclick="checkAnswerA()"></div>
-            <div id="B" onclick="checkAnswerB()"></div>
-            <div id="C" onclick="checkAnswerC()"></div>
+            <div id="A" onclick="checkAnswer('A')"></div>
+            <div id="B" onclick="checkAnswer('B')"></div>
+            <div id="C" onclick="checkAnswer('C')"></div>
+            <div id="score"></div>
         </div>
+    </div>
+    <div id="endQuizContent" style="display: none;">
+        <p>Congrats on Finishing this lesson on Hydrogren</p>
+        <div id="displayGrade"></div>
     </div>
     <script src="quiz.js"></script>
 
