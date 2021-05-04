@@ -26,13 +26,66 @@ h1{
 }
 
 table, td{
-    border: 2px;
-    border-color: black;
-    border-style:solid;
+    border: 2px solid black;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 #start:hover{
     border: 3px solid lightgreen;
     color : blue;
+}
+
+.lessonHeader{
+    
+    background-color:cornflowerblue;
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+}
+
+div.information{
+    background-color:  rgba(202, 208, 214, 0.76);
+    margin: 20px;
+    padding: 20px;
+}
+
+div.quizDiv{
+    background-color: rgba(202, 208, 214, 0.76);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+div.message{
+    background-color: rgba(202, 208, 214, 0.76);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+div.endQuizContent{
+    background-color: rgba(202, 208, 214, 0.76);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#question{
+    background-color: burlywood;
+    margin: auto;
+    padding: 10px;
+}
+
+#A,#B,#C{
+    background-color:whitesmoke;
+    margin: 20px;
+    padding: 10px;
+}
+
+#A:hover,#B:hover,#C:hover{
+    background-color:greenyellow;
+    font-size: 20px;
+    font-weight: bold;
 }

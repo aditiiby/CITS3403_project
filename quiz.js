@@ -1,8 +1,10 @@
 // Elements to the information before begining the Quiz
-const info1 = document.getElementById('id');
-const info2 = document.getElementById('id1');
-const info3 = document.getElementById('id2');
+//const info1 = document.getElementById('id');
+//const info3 = document.getElementById('id2');
+//const info2 = document.getElementById('id1');
 const info4 = document.getElementById("id3");
+const info5 = document.getElementById("id4");
+const info6 = document.getElementById("id5");
 
 //the button to start the quiz 
 const startbutton = document.getElementById("start")
@@ -12,10 +14,9 @@ var quiz = document.getElementById("quiz");
 
 function startQuiz(){
     //Hiding the infomation elements
-    info1.remove();
-    info2.remove();
-    info3.remove();
     info4.remove();
+    info5.remove();
+    info6.remove();
 
     //Hide the button
     startbutton.style.display = "none";
@@ -89,10 +90,12 @@ function checkAnswer(answer){
 //elements
 const endQuizContent = document.getElementById("endQuizContent");
 const displayGrade = document.getElementById("displayGrade");
+const quizDiv = document.getElementById("quizDiv");
 
 //Resultsed displayed 
 //Still need to round the results to 2 decimal places
 function displayResults(){
+    quizDiv.remove();
     quiz.style.display = "none";
     endQuizContent.style = 'display';
     displayGrade.innerHTML = "Your Grade was " + ((grade/quizQuestions.length)*100) + "%";
