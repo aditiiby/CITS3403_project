@@ -1,13 +1,14 @@
-
 nav {
     background-color: rgb(92, 111, 151);
     color: white;
 }
+
 .navbar-brand {
     font-size: 1.8rem;
     line-height: inherit;
     white-space: nowrap;
 }
+
 .navbar-brand .logo {
     width: 1.8rem;
     height: 1.8rem;
@@ -18,7 +19,6 @@ nav {
     display: block;
     text-decoration: none;
     color: white;
-
 }
 
 .wrapperMid .navbar-nav li .nav-link {
@@ -34,13 +34,14 @@ nav {
 }
 
 .wrapperRight .navbar-nav li .nav-link:hover {
-    background-color:rgb(224, 70, 70);
+    background-color: rgb(224, 70, 70);
     color: mintcream;
 }
 
 .nav-link {
     font-size: 1.1rem;
 }
+
 @media (max-width: 991px) {
     .wrapperMid .navbar-nav li .nav-link {
         padding: 1rem 2rem;
@@ -53,7 +54,6 @@ nav {
         float: none;
         vertical-align: top;
     }
-
     .navbar .navbar-collapse {
         text-align: center;
     }
