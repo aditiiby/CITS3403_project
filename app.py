@@ -6,10 +6,13 @@ from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'SuperSecretKey123'
+bootstrap = Bootstrap(app)
 
 class LoginForm(FlaskForm):
     username = StringField('username', validators=[InputRequired(), Length(min=8, max=20)])
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=20)])
+    
+
 
 class RegisterForm(FlaskForm):
     email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=60)])
@@ -59,13 +62,26 @@ def about():
 @app.route('/nav')
 def nav():
     return render_template('nav.html')
+
 @app.route('/login',methods=['GET','POST'])
 def login():
     form = LoginForm()
+
     if form.validate_on_submit():
+        print("+++++++++++++++++++++++++")
         return '<h1>' + form.username.data +'</h1>'
 
     return render_template('login.html', form = form)
+
+@app.route('/signup',methods=['GET','POST'])
+def signup():
+    form = RegisterForm()
+
+    if form.validate_on_submit():
+        print("+++++++++++++++++++++++++")
+        return '<h1>' + form.username.data +'</h1>'
+
+    return render_template('signup.html', form = form)
 
 if __name__ == '__main__':
 
