@@ -1,6 +1,20 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
+from flask_wtf import FlaskForm 
+from wtforms import StringField, PasswordField
+from wtforms.validators import InputRequired, Email, Length
+
 
 app = Flask(__name__)
+
+class LoginForm(FlaskForm):
+    username = StringField('username', validators=[InputRequired(), Length(min=8, max=20)])
+    password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=20)])
+
+class RegisterForm(FlaskForm):
+    email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=60)])
+    username = StringField('username', validators=[InputRequired(), Length(min=8, max=20)])
+    password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=20)])
+
 
 @app.route('/')
 def home():
@@ -48,6 +62,14 @@ def nav():
 @app.route('/login')
 def login():
     return render_template('login.html')
+
+'''@app.route('/login',methods=['GET','POST'])
+def login():
+    error = None
+    if request.method== 'POST':
+        if request.form['username'
+
+    return render_template('login.html')'''
 
 if __name__ == '__main__':
 
