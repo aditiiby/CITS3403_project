@@ -1,10 +1,11 @@
 from flask import Flask, render_template, redirect, url_for
-from flask_wtf import FlaskForm 
+from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField
 from wtforms.validators import InputRequired, Email, Length
-
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'SuperSecretKey123'
 
 class LoginForm(FlaskForm):
     username = StringField('username', validators=[InputRequired(), Length(min=8, max=20)])
@@ -58,18 +59,13 @@ def about():
 @app.route('/nav')
 def nav():
     return render_template('nav.html')
-
-@app.route('/login')
+@app.route('/login',methods=['GET','POST'])
 def login():
-    return render_template('login.html')
+    form = LoginForm()
+    if form.validate_on_submit():
+        return '<h1>' + form.username.data +'</h1>'
 
-'''@app.route('/login',methods=['GET','POST'])
-def login():
-    error = None
-    if request.method== 'POST':
-        if request.form['username'
-
-    return render_template('login.html')'''
+    return render_template('login.html', form = form)
 
 if __name__ == '__main__':
 
