@@ -2,7 +2,7 @@
 {% import "bootstrap/wtf.html" as wtf %}
 
 {% block title %}
-Login and Registration | ElementLabs
+Sign Up | ElementLabs
 {% endblock %}
 
 {% block styles %}
@@ -21,23 +21,23 @@ Login and Registration | ElementLabs
 {% endblock %}
 
 {% block content %}
-<div id="nav-placeholder"></div>
-<script>
-    $(function() {
-        $("#nav-placeholder").load("{{ url_for('nav')}}");
-    });
-</script>
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function() {
+            $("#nav-placeholder").load("{{ url_for('nav')}}");
+        });
+    </script>
+
 
     <div class ="login-page">
         <div class ="form">
-
-            <form class="login-form" method = 'POST'>
+            <form method = 'POST'>
                 {{ form.hidden_tag() }}
                 {{ wtf.form_field(form.username) }}
                 {{ wtf.form_field(form.password) }}
+                {{ wtf.form_field(form.email) }}
 
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-                <p class="message">Not Registered? <a href="{{ url_for('signup')}}">Register</a></p>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
             </form>
         </div>
     </div>
