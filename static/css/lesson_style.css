@@ -89,3 +89,8 @@ div.endQuizContent{
     font-size: 20px;
     font-weight: bold;
 }
+
+#lessonshref{
+    padding:10px;
+    font-size:20px;
+}

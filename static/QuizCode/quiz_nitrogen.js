@@ -98,5 +98,5 @@ function displayResults(){
     quizDiv.remove();
     quiz.style.display = "none";
     endQuizContent.style = 'display';
-    displayGrade.innerHTML = "Your Grade was " + ((grade/quizQuestions.length)*100) + "%";
+    displayGrade.innerHTML = "Your Grade was " + ((grade/quizQuestions.length)*100).toFixed() + "%";
 }

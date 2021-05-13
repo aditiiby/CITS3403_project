@@ -91,8 +91,9 @@
             </div>
         </div>
         <div class="endQuizContent" id="endQuizContent" style="display: none;">
-            <p>Congrats on Finishing this lesson on Hydrogren</p>
+            <p>Congrats on finishing this lesson on Hydrogren</p>
             <div id="displayGrade"></div>
+            <p id="lessonshref"><a href="{{ url_for('lessons')}}">Return to lesson page</a></p>
         </div>
         <script src="{{ url_for('static', filename='QuizCode/quiz_hydrogen.js') }}"></script>
 
