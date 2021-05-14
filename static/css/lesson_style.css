@@ -72,6 +72,8 @@ div.endQuizContent{
     text-align: center;
 }
 
+
+
 #question{
     background-color: burlywood;
     margin: auto;
@@ -93,4 +95,26 @@ div.endQuizContent{
 #lessonshref{
     padding:10px;
     font-size:20px;
+}
+
+/* styling for the progressbar */
+
+#Progress {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+#OutsideBar{
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#InsideBar{
+    width: 10%;
+    background-color: green;
+    text-align: center;
 }
