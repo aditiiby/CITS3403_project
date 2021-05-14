@@ -87,6 +87,7 @@ def nav():
         return render_template('navLogout.html', data = current_user.username)
     return render_template('nav.html')
 
+@login_required
 @app.route('/profile')
 def profile():
     return render_template('profile.html')
