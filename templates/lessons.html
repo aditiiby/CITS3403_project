@@ -25,6 +25,14 @@
           $("#nav-placeholder").load("{{ url_for('nav')}}");
       });
   </script>
+  
+    <div id="Progress">
+        <h1>Progress Bar</h1>
+      <div id="OutsideBar">
+          <div id="InsideBar"></div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='QuizCode/progressBar.js') }}"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <div class="box">
