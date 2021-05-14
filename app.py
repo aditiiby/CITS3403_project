@@ -7,7 +7,6 @@ from flask_bootstrap import Bootstrap
 from flask_sqlalchemy  import SQLAlchemy
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user, UserMixin
 
-signOut = 'nav.html'
 
 
 
@@ -84,47 +83,45 @@ def about():
 
 @app.route('/nav')
 def nav():
-    global signOut
-    return render_template(signOut)
+    if current_user.is_authenticated:
+        return render_template('navLogout.html', data = current_user.username)
+    return render_template('nav.html')
+
+@app.route('/profile')
+def profile():
+    return render_template('profile.html')
 
 
 
 
 @app.route('/login',methods=['GET','POST'])
 def login():
-    global signOut
     form = LoginForm()
-
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
         if user:
             if form.password.data == user.password:
                 login_user(user)
-                signOut = 'navLogout.html'
                 return render_template('lessons.html')
-        
         return render_template('login.html', form = form)
     return render_template('login.html', form = form)
 
 @app.route('/signup',methods=['GET','POST'])
 def signup():
     form = RegisterForm()
-
     if form.validate_on_submit():
         newUser = User(username = form.username.data, password = form.password.data, email = form.email .data)
         db.session.add(newUser)
         db.session.commit()
 
-        return '<h1>New user has been created!</h1>'#return profile page
+        return render_template('profile.html')
 
     return render_template('signup.html', form = form)
 
 @app.route('/logout')
 @login_required
 def logout():
-    global signOut
     logout_user()
-    signOut = 'nav.html'
     return render_template('index.html')
 
 
