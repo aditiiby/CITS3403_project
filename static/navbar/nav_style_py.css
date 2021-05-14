@@ -4,15 +4,19 @@ nav {
     color: white;
 }
 .navbar-brand {
-    font-size: 3.2rem;
+    font-size: 2.9rem;
     line-height: inherit;
     white-space: nowrap;
+
 }
 .navbar-brand .logo {
     width: 2.9rem;
     height: 2.9rem;
     margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
+    margin-right: 0.75rem;
+    margin-left: 0.2rem;
+    
     float: left;
 }
 
@@ -24,11 +28,11 @@ nav {
 }
 
 .wrapperMid .navbar-nav li .nav-link {
-    padding: 1rem 3rem;
+    padding: 2rem 5rem;
 }
 
 .wrapperRight .navbar-nav li .nav-link {
-    padding: 1rem 0.5rem;
+    padding: 2rem 1rem;
 }
 
 .nav-link:hover {
@@ -41,7 +45,7 @@ nav {
 }
 
 .nav-link {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 @media (max-width: 991px) {
     .wrapperMid .navbar-nav li .nav-link {
