@@ -82,15 +82,19 @@ def nitrogen():
 
 @app.route('/oxygen',methods=['GET','POST'])
 def oxygen():
-    result = request.get_json()
-    print (result)
-    if result != None:
-        current_user.oxygenResults = result
-        print (result)
-        return '<h1>' +result+ '</h1>'
     return render_template('oxygen.html')
 
-######################WTF 
+@app.route('/process',methods=['GET','POST'])
+def getOxy():
+    if request.method == 'POST':
+        result = request.get_json()
+        print (result)
+        if result != None:
+            current_user.oxygenResults = result
+            print (result)
+            return '<h1>' +result+ '</h1>'
+
+            #think this works
     
 
 @app.route('/about')

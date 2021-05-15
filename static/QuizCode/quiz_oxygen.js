@@ -95,16 +95,17 @@ const quizDiv = document.getElementById("quizDiv");
 //Resultsed displayed 
 //Still need to round the results to 2 decimal places
 
-$.ajax({
-    type: 'POST',
-    url: '/process',
-    data: JSON.stringify((grade/quizQuestions.length)*100),
-    contentType: 'application/json'  
-});
+
 
 function displayResults(){
     quizDiv.remove();
     quiz.style.display = "none";
     endQuizContent.style = 'display';
     displayGrade.innerHTML = "Your Grade was " + ((grade/quizQuestions.length)*100).toFixed() + "%";
+    $.ajax({
+        type: 'POST',
+        url: '/process',
+        data: JSON.stringify((grade/quizQuestions.length)*100),
+        contentType: 'application/json'  
+    });
 }
