@@ -104,8 +104,8 @@ function displayResults(){
     displayGrade.innerHTML = "Your Grade was " + ((grade/quizQuestions.length)*100).toFixed() + "%";
     $.ajax({
         type: 'POST',
-        url: '/process',
-        data: JSON.stringify((grade/quizQuestions.length)*100),
+        url: '/oxygen',
+        data: JSON.stringify(((grade/quizQuestions.length)*100).toFixed()),
         contentType: 'application/json'  
     });
 }

@@ -60,42 +60,61 @@ def index():
 def lessons():
     return render_template('lessons.html')
 
-@app.route('/Hydrogen')
-def Hydrogen ():
+@app.route('/hydrogen',methods=['GET','POST'])
+def hydrogen ():
+    if request.method == 'POST':
+        result = request.get_json()
+        if result != None:
+            current_user.hydrogenResults = result
+            print(result)
+            db.session.commit()
     return render_template('Hydrogen.html')
+    
 
-@app.route('/carbon')
+@app.route('/carbon',methods=['GET','POST'])
 def carbon():
+    if request.method == 'POST':
+        result = request.get_json()
+        if result != None:
+            current_user.carbonResults = result
+            db.session.commit()
     return render_template('carbon.html')
 
-@app.route('/helium')
+@app.route('/helium',methods=['GET','POST'])
 def helium():
+    if request.method == 'POST':
+        result = request.get_json()
+        if result != None:
+            current_user.heliumResults = result
+            db.session.commit()
     return render_template('helium.html')
 
-@app.route('/iron')
+@app.route('/iron',methods=['GET','POST'])
 def iron():
+    if request.method == 'POST':
+        result = request.get_json()
+        if result != None:
+            current_user.ironResults = result
+            db.session.commit()
     return render_template('iron.html')
 
-@app.route('/nitrogen')
+@app.route('/nitrogen',methods=['GET','POST'])
 def nitrogen():
+    if request.method == 'POST':
+        result = request.get_json()
+        if result != None:
+            current_user.nitrogenResults = result
+            db.session.commit()
     return render_template('nitrogen.html')
 
 @app.route('/oxygen',methods=['GET','POST'])
 def oxygen():
-    return render_template('oxygen.html')
-
-@app.route('/process',methods=['GET','POST'])
-def getOxy():
     if request.method == 'POST':
         result = request.get_json()
-        print (result)
         if result != None:
             current_user.oxygenResults = result
-            print (result)
-            return '<h1>' +result+ '</h1>'
-
-            #think this works
-    
+            db.session.commit()
+    return render_template('oxygen.html')
 
 @app.route('/about')
 def about():
@@ -110,7 +129,9 @@ def nav():
 @login_required
 @app.route('/profile')
 def profile():
-    return render_template('profile.html', data = current_user.oxygenResults)
+    if not current_user.is_authenticated:
+        return render_template('index.html')
+    return render_template('profile.html', oxygenResults = current_user.oxygenResults, hydrogenResults = current_user.hydrogenResults )
 
 
 
