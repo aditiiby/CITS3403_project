@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, request
 from flask_wtf import FlaskForm
 import sqlalchemy
 from wtforms import StringField, PasswordField
@@ -6,6 +6,7 @@ from wtforms.validators import InputRequired, Email, Length
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy  import SQLAlchemy
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user, UserMixin
+import json
 
 
 
@@ -28,6 +29,12 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(20), unique=True)
     password = db.Column(db.String(30))
     email = db.Column(db.String(60), unique=True)
+    hydrogenResults = db.Column(db.Integer)
+    heliumResults = db.Column(db.Integer)
+    carbonResults = db.Column(db.Integer)
+    nitrogenResults = db.Column(db.Integer)
+    oxygenResults = db.Column(db.Integer)
+    ironResults = db.Column(db.Integer)
 
     def getId(self):
         return self.id
@@ -73,9 +80,18 @@ def iron():
 def nitrogen():
     return render_template('nitrogen.html')
 
-@app.route('/oxygen')
+@app.route('/oxygen',methods=['GET','POST'])
 def oxygen():
+    result = request.get_json()
+    print (result)
+    if result != None:
+        current_user.oxygenResults = result
+        print (result)
+        return '<h1>' +result+ '</h1>'
     return render_template('oxygen.html')
+
+######################WTF 
+    
 
 @app.route('/about')
 def about():
@@ -90,7 +106,7 @@ def nav():
 @login_required
 @app.route('/profile')
 def profile():
-    return render_template('profile.html')
+    return render_template('profile.html', data = current_user.oxygenResults)
 
 
 
@@ -114,9 +130,8 @@ def signup():
         newUser = User(username = form.username.data, password = form.password.data, email = form.email .data)
         db.session.add(newUser)
         db.session.commit()
-
+        login_user(newUser)
         return render_template('profile.html')
-
     return render_template('signup.html', form = form)
 
 @app.route('/logout')
