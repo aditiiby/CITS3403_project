@@ -40,12 +40,12 @@ class User(db.Model, UserMixin):
         return self.id
 
 class LoginForm(FlaskForm):
-    username = StringField('username', validators=[InputRequired(), Length(min=8, max=20)])
+    username = StringField('username', validators=[InputRequired(), Length(min=3, max=20)])
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=30)])
 
 class RegisterForm(FlaskForm):
     email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=60)])
-    username = StringField('username', validators=[InputRequired(), Length(min=8, max=20)])
+    username = StringField('username', validators=[InputRequired(), Length(min=3, max=20)])
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=30)])
 
 
@@ -131,7 +131,9 @@ def nav():
 def profile():
     if not current_user.is_authenticated:
         return render_template('index.html')
-    return render_template('profile.html', oxygenResults = current_user.oxygenResults, hydrogenResults = current_user.hydrogenResults )
+    return render_template('profile.html', username = current_user.username, email = current_user.email, 
+        oxygen = current_user.oxygenResults, helium = current_user.heliumResults, iron = current_user.ironResults, 
+        hydrogen = current_user.hydrogenResults, carbon = current_user.carbonResults, nitrogen = current_user.nitrogenResults)
 
 
 
@@ -152,7 +154,7 @@ def login():
 def signup():
     form = RegisterForm()
     if form.validate_on_submit():
-        newUser = User(username = form.username.data, password = form.password.data, email = form.email .data)
+        newUser = User(username = form.username.data, password = form.password.data, email = form.email.data)
         db.session.add(newUser)
         db.session.commit()
         login_user(newUser)
