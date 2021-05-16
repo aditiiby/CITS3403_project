@@ -8,8 +8,6 @@ A web flask app with lessons and quizzes helping people learn about the basic el
 
 ##Project Overview 
 
-~~~
-
 ## To get started
 
 Activate the python virtual environment:
