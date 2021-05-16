@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request, jsonify
 from flask_wtf import FlaskForm
 import sqlalchemy
 from wtforms import StringField, PasswordField
@@ -56,9 +56,18 @@ def home():
 def index():
     return render_template('index.html')
 
-@app.route('/lessons')
+@app.route('/lessonsLoggedin')
+def lessonsLoggedin():
+    return render_template('lessonsLoggedin.html')
+
+@app.route('/lessons',methods=['GET','POST'])
 def lessons():
-    return render_template('lessons.html')
+    if current_user.is_authenticated:
+        return render_template('lessonsLoggedin.html', oxygen = oxygenCheck(), helium = heliumCheck(), iron = ironCheck(), 
+        hydrogen = hydrogenCheck(), carbon =  carbonCheck(), nitrogen = nitrogenCheck())
+    else:
+        return render_template('lessons.html')
+
 
 @app.route('/hydrogen',methods=['GET','POST'])
 def hydrogen ():
@@ -66,7 +75,6 @@ def hydrogen ():
         result = request.get_json()
         if result != None:
             current_user.hydrogenResults = result
-            print(result)
             db.session.commit()
     return render_template('Hydrogen.html')
     
@@ -131,13 +139,41 @@ def nav():
 def profile():
     if not current_user.is_authenticated:
         return render_template('index.html')
-    #solve none
     return render_template('profile.html', username = current_user.username, email = current_user.email, 
-        oxygen = current_user.oxygenResults, helium = current_user.heliumResults, iron = current_user.ironResults, 
-        hydrogen = current_user.hydrogenResults, carbon = current_user.carbonResults, nitrogen = current_user.nitrogenResults)
+        oxygen = oxygenCheck(), helium = heliumCheck(), iron = ironCheck(), 
+        hydrogen = hydrogenCheck(), carbon =  carbonCheck(), nitrogen = nitrogenCheck())
 
-
-
+#sqlite3 was storing 0 as 'None'
+def hydrogenCheck():
+    if current_user.hydrogenResults == None:
+        return 0
+    else:
+        return current_user.hydrogenResults
+def heliumCheck():
+    if current_user.heliumResults == None:
+        return 0
+    else:
+        return current_user.heliumResults
+def carbonCheck():
+    if current_user.hydrogenResults == None:
+        return 0
+    else:
+        return current_user.carbonResults
+def nitrogenCheck():
+    if current_user.nitrogenResults == None:
+        return 0
+    else:
+        return current_user.nitrogenResults
+def oxygenCheck():
+    if current_user.oxygenResults == None:
+        return 0
+    else:
+        return current_user.oxygenResults
+def ironCheck():
+    if current_user.ironResults == None:
+        return 0
+    else:
+        return current_user.ironResults
 
 @app.route('/login',methods=['GET','POST'])
 def login():
@@ -147,7 +183,7 @@ def login():
         if user:
             if form.password.data == user.password:
                 login_user(user)
-                return render_template('lessons.html')
+                return render_template('index.html')
         return render_template('login.html', form = form)
     return render_template('login.html', form = form)
 
@@ -159,7 +195,7 @@ def signup():
         db.session.add(newUser)
         db.session.commit()
         login_user(newUser)
-        return render_template('profile.html')
+        return render_template('index.html')
     return render_template('signup.html', form = form)
 
 @app.route('/logout')
