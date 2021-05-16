@@ -131,6 +131,7 @@ def nav():
 def profile():
     if not current_user.is_authenticated:
         return render_template('index.html')
+    #solve none
     return render_template('profile.html', username = current_user.username, email = current_user.email, 
         oxygen = current_user.oxygenResults, helium = current_user.heliumResults, iron = current_user.ironResults, 
         hydrogen = current_user.hydrogenResults, carbon = current_user.carbonResults, nitrogen = current_user.nitrogenResults)
