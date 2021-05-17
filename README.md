@@ -1,12 +1,22 @@
 # Elements Lab!
 
-A web flask app with lessons and quizzes helping people learn about the basic elements.
+A web flask app with lessons and quizzes helping people learn about the basic elements of a periodic table.
 
-##Sections
+## Sections
 [Project Overview](#project-overview)
 [To get started](#to-get-started)
 
-##Project Overview 
+## Project Overview 
+The aim of this project is to create a web app where people can learn about the basic elements in a periodic table. Users have lessons on six main elements which all have a quiz at then end of the lesson. The progress is tracked by users completing their quizzes. 
+
+### As outlined by the project guidelines we have included these features: 
+* A main webpage explaining the theme of the website
+* A signup/signin feature for new and returning users
+* A few pages on the lessons regarding the elements 
+* Quizzes on each of the lesson pages 
+* A profile page with feedback and results
+* An about page with authors information.
+
 
 ## To get started
 
