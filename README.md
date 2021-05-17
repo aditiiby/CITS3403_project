@@ -92,7 +92,12 @@ To run selenium tests, make sure that you have the
 appropriate web driver installed. In this case it should be geckodriver for Firefox, 
 and it assumes that it is installed in the test directory.
 Then start the webserver in TestingConfig, and run
+
 `python3 clientSideTest.py`
+
+_we tried to implement this testing but couldn't figure it the routing out. So disclaimer, it may not run._
+
+
 
 
 
