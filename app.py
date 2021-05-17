@@ -20,9 +20,9 @@ login_manager.init_app(app)
 login_manager.login_view = 'login'
 
 #
-##@login_manager.user_loader
-#def load_user(user_id):
-    #return User.query.get(int(user_id))
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
 
 #intitiate the database 
 class User(db.Model, UserMixin):
@@ -215,9 +215,6 @@ def signup():
         return render_template('index.html')
     return render_template('signup.html', form = form)
 
-
-
-
 #initiate the server
 if __name__ == '__main__':
-    app.run() 
+    app.run(debug=True) 
