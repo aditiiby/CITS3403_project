@@ -95,7 +95,7 @@ Then start the webserver in TestingConfig, and run
 
 `python3 clientSideTest.py`
 
-_we tried to implement this testing but couldn't figure it the routing out. So disclaimer, it may not run._
+_we tried to implement this testing but couldn't figure the routing out. So disclaimer, it may not run._
 
 
 
