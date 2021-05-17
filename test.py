@@ -3,8 +3,6 @@ from app import app, db, User
 
 class scoreModelTest(unittest.TestCase):
     def setUp(self):
-
-
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
         db.create_all()
         user1 = User(username="Testcase", password="kasjdnfkasj", email="example@gmail.com", hydrogenResults = 50, heliumResults= 50, carbonResults=50, nitrogenResults=50, oxygenResults=50, ironResults=50)
