@@ -86,6 +86,28 @@ Visual Studio Code and git
 * **Aditi Malu** - [aditiiby](https://github.com/aditiiby)
 
 
-References:
-The HTML code for the peroidic table on the home page. copied the table from the code below. 
-https://github.com/project-gemmi/periodic-table/blob/master/index.html
+## References:
+
+Periodic Table. (2020, June 15). In _GitHub_ https://github.com/project-gemmi/periodic-table/blob/master/index.html
+
+Clip Art: Elements: Oxygen B&W. (n.d.). _Oxygen_[Photograph]. abcteach. https://www.abcteach.com/documents/clip-art-elements-oxygen-bw-i-abcteachcom-42742
+
+Clip Art: Elements: Carbon B&W. (n.d.). _Carbon_[Photograph]. abcteach. https://www.abcteach.com/documents/clip-art-elements-carbon-bw-i-abcteachcom-42735 
+
+
+Clip Art: Elements: Hydrogen B&W. (n.d.). _Hydrogen_[Photograph]. abcteach. https://www.abcteach.com/documents/clip-art-elements-hydrogen-bw-i-abcteachcom-42738
+
+Clip Art: Elements: Helium B&W. (n.d.). _Helium_[Photograph]. abcteach. https://www.abcteach.com/documents/clip-art-elements-helium-bw-i-abcteachcom-42737
+
+Clip Art: Elements: Iron B&W. (n.d.). _Iron_[Photograph]. abcteach. https://www.abcteach.com/documents/clip-art-elements-iron-bw-i-abcteachcom-42863
+
+Clip Art: Elements: Nitrogen B&W. (n.d.). _Nitrogen_[Photograph]. abcteach. https://www.abcteach.com/documents/clip-art-elements-nitrogen-bw-i-abcteachcom-42741
+
+Bootstrap (n.d.). In _Bootstrap_. https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+
+jQuery Library (n.d.). In _jQuery_ https://code.jquery.com/jquery-1.10.2.js
+
+https://www.w3schools.com/
+https://prettyprinted.com/flasksql
+https://getbootstrap.com/
+https://www.youtube.com/watch?v=At4B7A4GOPg&t=638s&ab_channel=WebDevSimplified

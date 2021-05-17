@@ -15,6 +15,7 @@ class scoreModelTest(unittest.TestCase):
 
     def test_result(self):
         user1 = User.query.filter_by(username="Testcase").first()
+        self.assertTrue(user1.email, "example@gmail.com")
         self.assertFalse(user1.hydrogenResults == 10)
         self.assertFalse(user1.heliumResults == 10)
         self.assertFalse(user1.carbonResults == 10)
@@ -27,6 +28,19 @@ class scoreModelTest(unittest.TestCase):
         self.assertTrue(user1.nitrogenResults == 50)
         self.assertTrue(user1.oxygenResults == 50)
         self.assertTrue(user1.ironResults == 50)
+        #change a result
+        user1.ironResults = 69
+        self.assertTrue(user1.ironResults == 69)
+        self.assertFalse(user1.ironResults == 50)
+        user1.oxygenResults = 69
+        self.assertTrue(user1.oxygenResults == 69)
+        self.assertFalse(user1.oxygenResults == 50)
+        user1.hydrogenResults = 69
+        self.assertTrue(user1.hydrogenResults == 69)
+        self.assertFalse(user1.hydrogenResults == 50)
+
+
+
 
 
 if __name__=='__main__':
