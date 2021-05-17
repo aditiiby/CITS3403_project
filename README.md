@@ -84,3 +84,8 @@ Visual Studio Code and git
 * **Victor Woj** - [vwojcieski](https://github.com/vwojcieski)
 * **Joshua Symons** - [jws1998](https://github.com/jws1998)
 * **Aditi Malu** - [aditiiby](https://github.com/aditiiby)
+
+
+References:
+The HTML code for the peroidic table on the home page. copied the table from the code below. 
+https://github.com/project-gemmi/periodic-table/blob/master/index.html
