@@ -12,7 +12,7 @@ const startbutton = document.getElementById("start")
 // The Quiz element
 var quiz = document.getElementById("quiz");
 
-function startQuiz(){
+function startQuiz() {
     //Hiding the infomation elements
     info4.remove();
     info5.remove();
@@ -27,26 +27,25 @@ function startQuiz(){
 }
 
 // The questions, multi choice answers and the answer for the quiz
-let quizQuestions = [
-    {
-        question: "What is the lightest elemnt on earth?",
-        choiceA : "Hydrogen",
-        choiceB : "Helium",
-        choiceC : "Oxygen",
-        correct : "A"
-    },{
-        question : "What combines with hydrogen to create water?",
-        choiceA : "Helium",
-        choiceB : "Oxygen",
-        choiceC : "Air",
-        correct : "B"
+let quizQuestions = [{
+        question: "What is the lightest element on earth?",
+        choiceA: "Hydrogen",
+        choiceB: "Helium",
+        choiceC: "Oxygen",
+        correct: "A"
+    }, {
+        question: "What combines with hydrogen to create water?",
+        choiceA: "Helium",
+        choiceB: "Oxygen",
+        choiceC: "Air",
+        correct: "B"
     },
     {
-        question : "What two particles combine to create a hydrogen atom?",
-        choiceA : "Oxygen and Helium",
-        choiceB : "Atom and Molecule",
-        choiceC : "Proton and Electron",
-        correct : "C"     
+        question: "What two particles combine to create a hydrogen atom?",
+        choiceA: "Oxygen and Helium",
+        choiceB: "Atom and Molecule",
+        choiceC: "Proton and Electron",
+        correct: "C"
     }
 ];
 
@@ -64,7 +63,7 @@ let grade = 0;
 
 
 //Function to display the quiz
-function displayQuestion(){ 
+function displayQuestion() {
     let q = quizQuestions[currentQuestion];
     question.innerHTML = "Question " + (currentQuestion + 1) + ": " + q.question;
     choiceA.innerHTML = q.choiceA;
@@ -73,15 +72,14 @@ function displayQuestion(){
 }
 
 //Checking the Answers and moving onto the next question
-function checkAnswer(answer){
-    if(answer==quizQuestions[currentQuestion].correct){
+function checkAnswer(answer) {
+    if (answer == quizQuestions[currentQuestion].correct) {
         grade++;
     }
-    if(currentQuestion < (quizQuestions.length -1)){
+    if (currentQuestion < (quizQuestions.length - 1)) {
         currentQuestion++;
         displayQuestion();
-    }
-    else{
+    } else {
         displayResults();
     }
 }
@@ -94,15 +92,15 @@ const quizDiv = document.getElementById("quizDiv");
 
 //Resultsed displayed 
 //Still need to round the results to 2 decimal places
-function displayResults(){
+function displayResults() {
     quizDiv.remove();
     quiz.style.display = "none";
     endQuizContent.style = 'display';
-    displayGrade.innerHTML = "Your Grade was " + ((grade/quizQuestions.length)*100).toFixed() + "%";
+    displayGrade.innerHTML = "Your Grade was " + ((grade / quizQuestions.length) * 100).toFixed() + "%";
     $.ajax({
         type: 'POST',
         url: '/hydrogen',
-        data: JSON.stringify(((grade/quizQuestions.length)*100).toFixed()),
-        contentType: 'application/json'   
+        data: JSON.stringify(((grade / quizQuestions.length) * 100).toFixed()),
+        contentType: 'application/json'
     });
 }
