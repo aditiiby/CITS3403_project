@@ -6,11 +6,10 @@ from wtforms.validators import InputRequired, Email, Length
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy  import SQLAlchemy
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user, UserMixin
-import json
 
 
 
-
+#define
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'SuperSecretKey123'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
@@ -20,10 +19,12 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
-@login_manager.user_loader
-def load_user(user_id):
-    return User.query.get(int(user_id))
+#
+##@login_manager.user_loader
+#def load_user(user_id):
+    #return User.query.get(int(user_id))
 
+#intitiate the database 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), unique=True)
@@ -39,16 +40,18 @@ class User(db.Model, UserMixin):
     def getId(self):
         return self.id
 
+#validation check on login information
 class LoginForm(FlaskForm):
     username = StringField('username', validators=[InputRequired(), Length(min=3, max=20)])
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=30)])
 
+#validation check on sign up information
 class RegisterForm(FlaskForm):
     email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=60)])
     username = StringField('username', validators=[InputRequired(), Length(min=3, max=20)])
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=30)])
 
-
+#routes 
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -68,7 +71,8 @@ def lessons():
     else:
         return render_template('lessons.html')
 
-
+#for each of the element question links request for user results to be sent 
+#back to app.py and stored in the database under the user
 @app.route('/hydrogen',methods=['GET','POST'])
 def hydrogen ():
     if request.method == 'POST':
@@ -128,12 +132,15 @@ def oxygen():
 def about():
     return render_template('about.html')
 
+#if the user is logged in return a different navbar which has logout and profile replacing login and signup
 @app.route('/nav')
 def nav():
     if current_user.is_authenticated:
         return render_template('navLogout.html', data = current_user.username)
     return render_template('nav.html')
 
+#show the users name, email and results 
+#only show the profile if the user is signed in, send them to the index page if they are signed out
 @login_required
 @app.route('/profile')
 def profile():
@@ -143,7 +150,14 @@ def profile():
         oxygen = oxygenCheck(), helium = heliumCheck(), iron = ironCheck(), 
         hydrogen = hydrogenCheck(), carbon =  carbonCheck(), nitrogen = nitrogenCheck())
 
-#sqlite3 was storing 0 as 'None'
+#log out the user and send them to the index page
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return render_template('index.html')
+
+#sqlite3 was storing 0 as 'None' which was messing up how their results were displayed
 def hydrogenCheck():
     if current_user.hydrogenResults == None:
         return 0
@@ -175,6 +189,8 @@ def ironCheck():
     else:
         return current_user.ironResults
 
+#when the username is given, request the username from the db
+#compare the given password to the password stored in the user field which stores that username
 @app.route('/login',methods=['GET','POST'])
 def login():
     form = LoginForm()
@@ -187,6 +203,7 @@ def login():
         return render_template('login.html', form = form)
     return render_template('login.html', form = form)
 
+#make a new user in the db and store all the provided information
 @app.route('/signup',methods=['GET','POST'])
 def signup():
     form = RegisterForm()
@@ -198,14 +215,9 @@ def signup():
         return render_template('index.html')
     return render_template('signup.html', form = form)
 
-@app.route('/logout')
-@login_required
-def logout():
-    logout_user()
-    return render_template('index.html')
 
 
 
+#initiate the server
 if __name__ == '__main__':
-
-    app.run(debug = True) 
+    app.run() 
