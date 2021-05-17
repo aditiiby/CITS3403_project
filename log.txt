@@ -1,0 +1,939 @@
+commit a22fd2ea61ff6353a7bb9e0715d1394a00f39b55
+Author: Aditi <81210563+aditiiby@users.noreply.github.com>
+Date:   Mon May 17 16:01:39 2021 +0800
+
+    Final update
+
+commit 4391dd805df582b0cb5a8c73deff464b17e2f3df
+Author: Aditi <81210563+aditiiby@users.noreply.github.com>
+Date:   Mon May 17 16:00:52 2021 +0800
+
+    Update final
+
+commit 1af633dd3759cabc14ecdbbf1a158bb485dfb7ca
+Author: Aditi <81210563+aditiiby@users.noreply.github.com>
+Date:   Mon May 17 16:00:44 2021 +0800
+
+    Update final
+
+commit 7e7ca586a58bbe9e597542f6b43a10e5b990df4d
+Author: Aditi <81210563+aditiiby@users.noreply.github.com>
+Date:   Mon May 17 15:48:32 2021 +0800
+
+    Final Update Read Me
+
+commit 61388e11fea942153e2ba8b2c1be864c7a7f8186
+Author: Aditi <81210563+aditiiby@users.noreply.github.com>
+Date:   Mon May 17 15:41:31 2021 +0800
+
+    Final Readme
+
+commit 705d782b229951ff8b2265289dedf60dfc00036f
+Merge: 69a72a7 2e2a257
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 15:30:59 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit 69a72a71f0da802428d3fc67b9619e463ebb9031
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 15:30:44 2021 +0800
+
+    updated my about info
+
+commit 2e2a257c7bb2e8090624d664badb8a6251423f76
+Merge: 2900845 626cd11
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon May 17 15:27:14 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit 2900845c5cfaccdab3db055878c7c408b7c8adb5
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon May 17 15:26:56 2021 +0800
+
+    added a <p>
+
+commit 626cd11abd74a3311d94fb3c318b1da51c59511e
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 15:24:43 2021 +0800
+
+    updated
+
+commit 66f3a9776a5adeb98ecb15487dec3cb6e30fae22
+Merge: 6a5c370 40e715e
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 15:23:59 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit 6a5c3700f482a9031aa9d007caf75f98760b715c
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 15:21:17 2021 +0800
+
+    added some more tests
+
+commit 40e715e07e8e55dc6c44a2299c33ede8621e6f61
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Mon May 17 15:21:02 2021 +0800
+
+    Added references
+
+commit 9bed3494016690e5cef430f1d8dfcdb23843ccc6
+Merge: 543e4a3 70e0117
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon May 17 15:05:34 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit 70e01172d0bdf9c39dc913a62c323c82381c1fa9
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Mon May 17 15:03:36 2021 +0800
+
+    Minor edits
+
+commit 87056715091f4a5dd8c1dda0a84d8293cebd38b1
+Merge: 13d1444 e90075b
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Mon May 17 15:02:33 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit 543e4a36d3ab47e36c0d5f4cd4ded1e074d1e467
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon May 17 15:02:16 2021 +0800
+
+    reference
+
+commit 13d14449ef119b247c049192458866a8b70f2543
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Mon May 17 14:59:50 2021 +0800
+
+    Minor edits
+
+commit e90075bbc70c25224631057ea1fc0f17e9e9faa7
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 14:59:09 2021 +0800
+
+    removed unneeded files
+
+commit 00b4c3b003fd449c5488c3622d0a5ac3d62a512e
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 14:58:11 2021 +0800
+
+    minor change
+
+commit 85eb8b100ce4e2240ea72c5799afb20de746cc3a
+Merge: 2fe60a3 d7b4dc0
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 14:27:14 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit 2fe60a322e2b8cfbf67369828a3ddd025e09ebe6
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 14:27:11 2021 +0800
+
+    started clientsidetest
+
+commit d7b4dc0f2af740bda51b02bb3d90cc08ca623665
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Mon May 17 14:05:14 2021 +0800
+
+    color changes
+
+commit 21cb5d436589ef3c609e8fd935f579fb50b12c14
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Mon May 17 13:49:25 2021 +0800
+
+    Minor edits
+
+commit 75ab9cc23bfb6dade137133717865f51d2e4625e
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Mon May 17 13:47:30 2021 +0800
+
+    Minor edits
+
+commit e25cc322752d3aa23ac564e3ccdf4e75014bc7cf
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Mon May 17 13:44:36 2021 +0800
+
+    Minor edits
+
+commit 8a524678335ef38e569964925ae67792ea895d01
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Mon May 17 13:33:19 2021 +0800
+
+    Delete Unittest.py as implemented it all in test.py
+
+commit b8e078b866238dcaf387f4d45756c2fc048c1586
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 13:30:39 2021 +0800
+
+    fixed database
+
+commit 4e057473904caf5150a29188f1a88bb1bf943e6c
+Merge: 0f6ea95 66b995c
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 13:26:04 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit 0f6ea956b2bd9111d48fe31fd096c2f54a364c6b
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 13:25:28 2021 +0800
+
+    fixed a few things
+
+commit 66b995c16001369174cf49d421dca578b58bc971
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon May 17 12:49:57 2021 +0800
+
+    adjusted the test_results funciton
+
+commit 5b7240cb3fea033903274605826706cd916c72a8
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon May 17 12:45:51 2021 +0800
+
+    adjust the test_results funciton
+
+commit 15eaf27fb0c205995a18b5c52ac45a39fb3f3227
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon May 17 12:39:30 2021 +0800
+
+    Delete test2.py
+
+commit 32b93d2fe816761f25403a7c46b1471f6f56d954
+Merge: 83ef558 21a7819
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon May 17 12:38:55 2021 +0800
+
+    Merge branch 'DevTests' into main
+
+commit 21a7819c297e75a85a8f645a5f32d395c6f7c395
+Merge: b0e9308 cf0c66f
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon May 17 12:38:21 2021 +0800
+
+    Test the Resutls in the db
+
+commit 83ef55859bfb7b0c59da47829bba8b038dc69247
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Mon May 17 12:20:11 2021 +0800
+
+    Update README.md
+
+commit ffeea45e0aaa22d6ad94a82e8f7fb1795550811e
+Merge: a7010d0 5249a61
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 12:05:57 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit a7010d0eff7f4209c193c56d15d713d984d101db
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 12:05:33 2021 +0800
+
+    added comments to app.py
+
+commit 5249a61f613b90f028db27ebf7ce0d2991bb9e7f
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Mon May 17 12:04:06 2021 +0800
+
+    Update unittest.py
+
+commit bc85b148527c97aeaad551f3f155d87361c60930
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Mon May 17 12:03:40 2021 +0800
+
+    Create unittest.py
+
+commit cf0c66fc410c547b9750937267e1090b176044b1
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon May 17 11:57:22 2021 +0800
+
+    inserted information for the about me page
+
+commit b0e93085fdd21852cdb8238d30e1388719ffb703
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon May 17 11:54:16 2021 +0800
+
+    nothing
+
+commit 23c7de667adfb1dba824d37e640623e8b39136ae
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon May 17 10:59:07 2021 +0800
+
+    minor style change
+
+commit a42022a5acd981f7651d99d8eb78afcaff3033ad
+Author: Aditi <81210563+aditiiby@users.noreply.github.com>
+Date:   Sun May 16 22:46:00 2021 +0800
+
+    Update
+
+commit 157cb9b198f5a30fef0c50ddf21ee078b9982372
+Author: Aditi <81210563+aditiiby@users.noreply.github.com>
+Date:   Sun May 16 22:45:19 2021 +0800
+
+    Update
+
+commit 77cbd1f55345b16b9704130a8d7ca3bded40f28a
+Author: Aditi <81210563+aditiiby@users.noreply.github.com>
+Date:   Sun May 16 22:44:27 2021 +0800
+
+    Readme
+    
+    needs to be edited
+
+commit f4edd3c86617352f9ee7797c1dfe8860754109f0
+Author: Aditi <81210563+aditiiby@users.noreply.github.com>
+Date:   Sun May 16 22:44:07 2021 +0800
+
+    Update README.md
+
+commit dfb6cffee43ee5dbd8987f4f15557300a1ca6b06
+Author: Aditi <81210563+aditiiby@users.noreply.github.com>
+Date:   Sun May 16 22:43:39 2021 +0800
+
+    Readme
+    
+    Needs to be edited
+
+commit cc340b85e8ddb5739b4696945392f4cffd35fd79
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Sun May 16 22:28:04 2021 +0800
+
+    updated the progress bar
+
+commit f8798c35905c833fca811b7b30b4664d5119a6c9
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Sun May 16 20:21:55 2021 +0800
+
+    Update app.py
+
+commit dc4e846467bd7c262007ef3ce002a21ad0681f07
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Sun May 16 15:09:54 2021 +0800
+
+    can send results to profile
+
+commit 6ae86ad32153a6837ef7db79e2e67e50aee87248
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Sun May 16 03:41:14 2021 +0800
+
+    minor changes
+
+commit 5247dde7808ac6025924e50d3e80cf8d3dc53d6b
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Sun May 16 03:38:51 2021 +0800
+
+    minor changes
+
+commit a5b9c0a98040a89013fe72ba69500fd847fc9000
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Sun May 16 03:33:09 2021 +0800
+
+    color edits
+
+commit ab335b6e7e6b85be79a9412d8d109f8542cf53c1
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Sun May 16 03:20:11 2021 +0800
+
+    Added pics for element icons
+
+commit ad78dbb41ef64b1c5f186e36ddd196ad6cfef790
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Sun May 16 03:11:34 2021 +0800
+
+    Added pics for lessons
+
+commit 90645042dba140d00edecf615200526472e19ae8
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Sun May 16 03:10:30 2021 +0800
+
+    edited lessons
+
+commit 858fb6bf3b16af9b0dce940f5b85ac3d2242e845
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Sun May 16 02:53:52 2021 +0800
+
+    Edited lessons
+
+commit ef72860e7e3bcbfd01e9b02993f74299bd0a2169
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Sun May 16 02:45:15 2021 +0800
+
+    added profile
+
+commit 551d9610049b3fc82aedb02be50fc41f3b3a557c
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Sat May 15 21:23:59 2021 +0800
+
+    Update settings.json
+
+commit bec7f0003c932ab103a7dbf9928c66c5f3b4c867
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Sat May 15 21:21:00 2021 +0800
+
+    completed result storage
+
+commit efd2f1f7efb924e464ead012585928d8174d28ed
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Sat May 15 20:10:38 2021 +0800
+
+    post results to database
+
+commit fa94d5ea3414c14d25caae448b2898899d02639b
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Sat May 15 14:24:06 2021 +0800
+
+    Started trying to create test
+
+commit 5f8976caad47e9adf5a48f21f28fbaa66caedf06
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Sat May 15 12:57:42 2021 +0800
+
+    trying to save data
+
+commit f5b22b78600da322f8f56cd85328478b83d2502b
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Fri May 14 15:51:46 2021 +0800
+
+    changed login param
+
+commit c6c4de6d33be6682c9ff54c52fba24e7d85b9fb2
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Fri May 14 15:50:55 2021 +0800
+
+    add profile outline
+
+commit e0f455723d81cc663736a9766b7ebba4a4ecd230
+Merge: fa5d028 633ea04
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Fri May 14 15:30:22 2021 +0800
+
+    Merge branch 'database' into main
+
+commit 633ea0403caa2901dceb37d3bf9163163529f1bb
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Fri May 14 15:30:06 2021 +0800
+
+    set up login detection
+
+commit fa5d028f68a408f225c27ff8fefeba5647d72ffd
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Fri May 14 13:42:14 2021 +0800
+
+    minor edits grammatical
+
+commit 365a208acf59b7839fce344bbcf0914455f54da2
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Fri May 14 13:37:29 2021 +0800
+
+    installed sqlalchemy
+
+commit 05c81abd81c78886a573f5beae373343691fbd8e
+Merge: 2853b8b 22d2786
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Fri May 14 13:30:47 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit 2853b8bdd1b127a7791b5ef67172450960f5e472
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Fri May 14 13:29:07 2021 +0800
+
+    implemented a database
+
+commit 22d2786889c3797dfe15f28787773f47a6557126
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Fri May 14 12:39:59 2021 +0800
+
+    Created a progressbar
+
+commit d892fcefc86e9dbe73512b7209a90c33cbb15e16
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Fri May 14 12:00:17 2021 +0800
+
+    minor grammatical edits
+
+commit ba2a76e6044c938be4591a59d9de15b3240eaca9
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Fri May 14 11:46:14 2021 +0800
+
+    fixed up navar
+
+commit e791f4822f40720f841a5f87ae4b47b98ace71ab
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Fri May 14 08:29:29 2021 +0800
+
+    update about.html + about_style.css
+
+commit 3025b8ac82fdf945b2a634d7db98c89ea84c9a64
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Thu May 13 22:50:22 2021 +0800
+
+    adjusting navbar
+
+commit 31ddbadc0d6f3477e7c78c316c26a75888d5cbb3
+Merge: be8d168 87767a6
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Thu May 13 21:46:14 2021 +0800
+
+    Merge branch 'registration' into main
+
+commit 87767a61b15a6aa145fc83569f043d7b0eeb258b
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Thu May 13 21:42:15 2021 +0800
+
+    changed added a sign up page
+
+commit be8d168543c096ce3ff65e276254e09d86f53d1c
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Thu May 13 19:55:04 2021 +0800
+
+    added a link back to the lesson page at the end of the quiz
+
+commit ce6fcd3395672032b187970b6d4fcc7a0a18271e
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Thu May 13 19:22:09 2021 +0800
+
+    Created a virtual enviroment
+
+commit 584a6d36a144d6b2740ebcadc093c29e86585469
+Merge: 8fb6e7d 6d8a67e
+Author: vwojcieski <71686563+vwojcieski@users.noreply.github.com>
+Date:   Thu May 13 18:27:51 2021 +0800
+
+    Merge pull request #2 from vwojcieski/registration
+    
+    login testing
+
+commit 6d8a67e00dd3092e7eb01098a04a12b25ac947db
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Thu May 13 18:21:27 2021 +0800
+
+    login testing
+
+commit 8fb6e7d8dacfa80e569ca630c78a5396c0e15a57
+Merge: 5ca7a8f e399e67
+Author: vwojcieski <71686563+vwojcieski@users.noreply.github.com>
+Date:   Thu May 13 17:54:45 2021 +0800
+
+    Merge pull request #1 from vwojcieski/registration
+    
+    start work on registration forms
+
+commit e399e67236f5e2c8c42e153dc84bdd1785b2ccf8
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Thu May 13 17:54:05 2021 +0800
+
+    start work on registration forms
+
+commit 5ca7a8fcf79fb2bb1ca2000520eb5dbe15f55a6e
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Thu May 13 14:55:15 2021 +0800
+
+    updated the navbar
+
+commit 1352efb07f213ea2501e8c8f07dd21b63bebff4f
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Wed May 12 14:32:20 2021 +0800
+
+    Some small edits
+
+commit 193994c56a8332c4b3a053153f2aeb9d4b297732
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Wed May 12 14:15:07 2021 +0800
+
+    added some content and some style to the home page need some work still
+
+commit 2e644d2fa54e97f06039526c50d09ddf2d16eeab
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Wed May 12 11:10:55 2021 +0800
+
+    adjusted the connection with each of the pages
+
+commit f74ea7f2f6d36cba39551046da85394fa00a9538
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Tue May 11 16:27:20 2021 +0800
+
+    implemented flask
+    
+    victor implemented flask
+
+commit 0c5b53376d496f944aa748e4806b0d88590dc83f
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue May 11 12:29:30 2021 +0800
+
+    Update .DS_Store
+
+commit 04fd5315921c16f20ba15bc1e0da737bd054409d
+Merge: f23ceec c0e2a2c
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue May 11 12:24:46 2021 +0800
+
+    Merge branch 'DevQuiz' into main
+
+commit c0e2a2c92a92d485be466e7a53be55b04f389c44
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue May 11 12:22:09 2021 +0800
+
+    Adding a Quiz to each lesson
+
+commit f23ceecd2d0a3f64f6bf873e4ad274f511316812
+Merge: 5c47534 9439bf2
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Tue May 11 11:35:16 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit 5c475341f7a1dfa0ee7364a592a7475168819c7b
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Tue May 11 11:35:14 2021 +0800
+
+    ??
+
+commit 9439bf214e8ee28b2675ff863bc99529550c3629
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue May 11 11:34:49 2021 +0800
+
+    edits
+
+commit 8f6734176cd455f78a202c11f2d775872e801694
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue May 11 11:27:21 2021 +0800
+
+    Update lessons.html
+
+commit 9dcc7ceb66852f9352ac8d80897b15e140991f5c
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue May 11 10:57:20 2021 +0800
+
+    Change the name of one file
+
+commit cba00de16bd7b96975a8cb54ff424d07db842a70
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Fri May 7 01:35:08 2021 +0800
+
+    Added some more files like the hydrogen one
+
+commit 0d6ec6352cba05645c968f3720155d3d22578143
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Thu May 6 23:55:17 2021 +0800
+
+    Update .DS_Store
+
+commit fc487f9d492696b3dec252e2002d0ba1d0b1ab0f
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue May 4 14:33:19 2021 +0800
+
+    Did some Styleing of the quiz may need some changes in the future, so that is meet our overall website design
+
+commit f766c78b836642a2df231dc28f23a8282e05505b
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Sat May 1 17:25:56 2021 +0800
+
+    Update lessons.html
+
+commit ac3d8a11e1ac04966da8ae5939b1e5ef4a20b01e
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Tue Apr 27 20:05:50 2021 +0800
+
+    Update questionsToAdd.txt
+
+commit 9ba9caf99ade1702710dca387d8345e1796943cd
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue Apr 27 15:50:12 2021 +0800
+
+    Quiz
+
+commit 9fabca4a2626d140af53023fa2b82ada6ddcaf2e
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue Apr 27 15:13:15 2021 +0800
+
+    Cleaning up the Quiz code
+
+commit 77f4fdb2636919973e38376e4caeb39ade4e1eb7
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue Apr 27 14:04:59 2021 +0800
+
+    Worked on developing the quiz
+
+commit f1e8fe6195116685b6aa2e2fb86a8f156fac93d1
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon Apr 26 13:22:36 2021 +0800
+
+    Update lessons.html
+
+commit c89b1157a3b08326e0ca681fce0e9b1ab6157c22
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon Apr 26 13:19:56 2021 +0800
+
+    made some edits to lesson 1
+
+commit f9f128b73389e858f8af83883c47a2e1529f8b9e
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Mon Apr 26 12:27:24 2021 +0800
+
+    Started to build the learning content of the lesson.
+
+commit f9b81397070bc1a4b49bc5b6dd069ffc1fa0e859
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Thu Apr 22 15:27:25 2021 +0800
+
+    Started creating lesson 1
+    
+    Only created a table with the elements basic information and the a button for the user to click when they finish the lesson.
+
+commit dc346b0638644fbbab180294ef625303f530fdfb
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Thu Apr 22 14:34:17 2021 +0800
+
+    Update .DS_Store
+
+commit 3476d502f8b548002061d5b0247bf02be1f807af
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Wed Apr 21 16:16:15 2021 +0800
+
+    added info to questionstoadd.txt
+
+commit a46fa35060af54e4cc10a772b2c3a9f2970d92ec
+Merge: 5acb173 ad84ad9
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Wed Apr 21 16:10:41 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit 5acb1733af4da1be1d31372b38af760450083317
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Wed Apr 21 16:10:17 2021 +0800
+
+    changed login/signup
+    
+    changed [login][sign up] to login/signup
+
+commit ad84ad980b32266802be730c7987317668b1b2ca
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Wed Apr 21 15:55:57 2021 +0800
+
+    Carbon information
+
+commit 39a6040143e7b63530167fdf7fa28c23ba17e8b6
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Wed Apr 21 15:40:37 2021 +0800
+
+    Hydrogen information
+
+commit d4cb9ac4d943a20c997147fbb6c1d69153c3195f
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Wed Apr 21 15:28:29 2021 +0800
+
+    Delete Lesson1.html
+
+commit 30dcd640d4dac3f6b4067cda8ae2bc0e7ae829d8
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Wed Apr 21 15:27:59 2021 +0800
+
+    Update .DS_Store
+
+commit c949392d9878f17746683687437c9fddbbb61a1a
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Wed Apr 21 15:09:05 2021 +0800
+
+    split login form
+
+commit ddbdd63d4d1d5eba9006394bb95c1bb19868dab0
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Wed Apr 14 15:23:10 2021 +0800
+
+    Lesson1 page
+
+commit 25ca1be26721e4a03910ba2faaf643d1d40ce442
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Wed Apr 14 15:05:40 2021 +0800
+
+    Login page
+    
+    This is just a layout of the Login page. It will need editing to be able to store the users information so that they can come back to the website.
+    
+    It style will of course have to be change to match our style across the web page.
+
+commit 2d47a46d37a00e486c5441d0ec77c64b92b6ef3c
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Wed Apr 14 14:17:51 2021 +0800
+
+    Create login.html
+
+commit 56f95caba2de7a75fd9d2bb482457ccd11919a9f
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Wed Apr 14 13:58:23 2021 +0800
+
+    Update .DS_Store
+
+commit 740feec47247219082fc5f6105093b8a119ebdac
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Tue Apr 13 14:56:59 2021 +0800
+
+    added layout to lessons file
+    
+    victor added layout to lessons file
+
+commit 689ce6015b232514892c8894da5cad9bc4f15783
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Mon Apr 12 11:35:55 2021 +0800
+
+    restructured files
+    
+    victor restructured files and added lessons and about html files
+
+commit 59772cf6bb002543a0cc180f87b5c1fed7415585
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Sun Apr 11 15:09:37 2021 +0800
+
+    made navbar into a separate file
+    
+    victor changed navbar to be a separate html and css file that can be used across multiple pages
+
+commit 192ec9a2c87c421ab8d0f327f3cc515e1e85d87d
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Sun Apr 11 14:04:27 2021 +0800
+
+    edited navbar
+    
+    removed unnecessary '{'
+
+commit be77819f850c91a795ff591283ede42a7c236c44
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Sun Apr 11 14:03:31 2021 +0800
+
+    added navbar
+    
+    victor added working responsive bootstrap 5 navbar
+
+commit efa0e32ab080669a831ef288e181db3530b73ab0
+Author: Victor Wojcieski <victor.wojcieski4@gmail.com>
+Date:   Thu Apr 8 18:48:49 2021 +0800
+
+    Update index.html
+
+commit 8cf2f1b1f9139ea9de4569d01e58a41572510852
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Tue Mar 23 15:28:17 2021 +0800
+
+    made layout of what we should make
+
+commit 5da19324d36834fbfc37f8f66262e1c96c0a041b
+Merge: 5c04f95 8db1e73
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Tue Mar 23 13:58:37 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit 5c04f95ea4d7256e6231470ef01f7736787f1714
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Tue Mar 23 13:57:25 2021 +0800
+
+    Update questionsToAdd.txt
+
+commit 8db1e730d7d1a70cec38c90bb28206f7a1b53f7d
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Tue Mar 23 13:57:10 2021 +0800
+
+    Update questionsToAdd.txt
+
+commit 494ad94c43b3a6e1c61b6c7c3335509adf20f145
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Tue Mar 23 13:56:00 2021 +0800
+
+    Update questionsToAdd.txt
+
+commit 29a535e065422d06c8a1c195fe699c3ef41dbdce
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Tue Mar 23 13:55:42 2021 +0800
+
+    Update questionsToAdd.txt
+
+commit a2c4b5b92d274b26e58f8d262332b746b6d6367e
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Tue Mar 23 13:54:35 2021 +0800
+
+    Update questionsToAdd.txt
+
+commit 50c6ea1e166ea57ffce59e1c12153cf530c28ab1
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue Mar 23 13:43:41 2021 +0800
+
+    Update index.html
+
+commit 2ff69c3e896c4890baf63406d8d64af9dc9c4c26
+Merge: eda2bdc ec0db2e
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue Mar 23 13:42:58 2021 +0800
+
+    Merge branch 'main' of https://github.com/vwojcieski/CITS3403_project into main
+
+commit eda2bdcbc5dbc4c294219e1fb0a28a6f8d1a5b4c
+Author: jws1998 <jws_1998@outlook.com>
+Date:   Tue Mar 23 13:42:32 2021 +0800
+
+    Update .DS_Store
+
+commit ec0db2e5616b1a95edd969d6db8e0bfa4ab95141
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Tue Mar 23 13:42:29 2021 +0800
+
+    Update questionsToAdd.txt
+
+commit d89b401f3d0aafeb2d430c058dc7126267f146b8
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Tue Mar 23 13:36:50 2021 +0800
+
+    Create questionsToAdd.txt
+
+commit 5ad6df51b2e43c7eb025ae629c5257a8151c756b
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Tue Mar 23 13:34:23 2021 +0800
+
+    Create style.css
+    
+    created style.css
+
+commit 1f9c5acc29e797934408536a2d2f8fa001ce1cd4
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Tue Mar 23 13:33:36 2021 +0800
+
+    Update index.html
+    
+    added base html code
+
+commit 2932c18a791dff71887db923d48db2eb5bfe7298
+Author: aditiiby <aditimalu13@gmail.com>
+Date:   Tue Mar 23 13:27:02 2021 +0800
+
+    Update index.html
+
+commit c80116e8645d6e539f9ead5f7f42c33de76b4a0c
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Tue Mar 23 13:23:09 2021 +0800
+
+    Update index.html
+
+commit 0576798192d3544c0a23e41711a5d0fa919a6733
+Author: vwojcieski <victor.wojcieski4@gmail.com>
+Date:   Tue Mar 23 13:21:43 2021 +0800
+
+    Create .DS_Store
+
+commit d7fc27258ceaa3b1f3d626708a21f3a8ab798ab7
+Author: Victor Wojcieski <victorwojcieski@Victors-MacBook-Air.local>
+Date:   Tue Mar 23 12:28:58 2021 +0800
+
+    add index.html
+
+commit f17c270d17e96ec82f5ed8135a4e6496ccc4b0e2
+Author: Victor Wojcieski <victorwojcieski@Victors-MacBook-Air.local>
+Date:   Tue Mar 23 12:23:46 2021 +0800
+
+    first commit
