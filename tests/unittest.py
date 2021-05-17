@@ -26,3 +26,4 @@ class UserModelCase(unittest.TestCase):
     self.assertTrue(s.email('otherdude@gmail.com'))
 
 
+
