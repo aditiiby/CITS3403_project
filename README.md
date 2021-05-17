@@ -84,3 +84,11 @@ Visual Studio Code and git
 * **Victor Woj** - [vwojcieski](https://github.com/vwojcieski)
 * **Joshua Symons** - [jws1998](https://github.com/jws1998)
 * **Aditi Malu** - [aditiiby](https://github.com/aditiiby)
+
+
+
+
+https://www.w3schools.com/
+https://prettyprinted.com/flasksql
+https://getbootstrap.com/
+https://www.youtube.com/watch?v=At4B7A4GOPg&t=638s&ab_channel=WebDevSimplified

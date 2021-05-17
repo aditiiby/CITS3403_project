@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 {% extends "bootstrap/base.html" %} {% import "bootstrap/wtf.html" as wtf %} {% block title %} Sign Up | ElementLabs {% endblock %} {% block styles %} {{super()}}
 <meta charset="UTF-8">
 <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
@@ -19,7 +21,7 @@
 
 <div class="login-page">
     <div class="form">
-        <form method='POST'>
+        <form method="POST">
             {{ form.hidden_tag() }} 
             {{ wtf.form_field(form.username) }} 
             {{ wtf.form_field(form.password) }} 

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 {% extends "bootstrap/base.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
 
@@ -31,7 +33,7 @@ Login and Registration | ElementLabs
     <div class ="login-page">
         <div class ="form">
 
-            <form class="login-form" method = 'POST'>
+            <form class="login-form" method = "POST">
                 {{ form.hidden_tag() }}
                 {{ wtf.form_field(form.username) }}
                 {{ wtf.form_field(form.password) }}
