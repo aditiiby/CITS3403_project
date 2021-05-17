@@ -106,3 +106,8 @@ Clip Art: Elements: Nitrogen B&W. (n.d.). _Nitrogen_[Photograph]. abcteach. http
 Bootstrap (n.d.). In _Bootstrap_. https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
 
 jQuery Library (n.d.). In _jQuery_ https://code.jquery.com/jquery-1.10.2.js
+
+https://www.w3schools.com/
+https://prettyprinted.com/flasksql
+https://getbootstrap.com/
+https://www.youtube.com/watch?v=At4B7A4GOPg&t=638s&ab_channel=WebDevSimplified
