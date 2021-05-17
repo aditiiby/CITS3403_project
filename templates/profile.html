@@ -24,18 +24,26 @@
         });
     </script>
 
-    <div id="title-placeholder">
-        <p> Teaching kids worldwide about the mysteries of elements. </p>
-        <div id="intro-placeholder">
-            <p>
-                We are a group of University of Western Australia's students creating this website as an assignment to help educate children. Our goal is to help kids learn about the basics of elements in a fun and educational way. We hope to create an interactive, fun
-                and engaging way of learning.
-            </p>
+
+
+    <div class="card mx-auto profile">
+        <h5 class="card-header" style="background-color:rgb(153, 185, 183);">{{username}}'s Profile</h5>
+        <div class="card-body">
+            <p><b>Username</b>:{{username}} </p>
+            <p><b>Email</b>:{{email}} </p>
         </div>
     </div>
-
-
-
-<h1>the stuff above is just because it using another pages css file so make a new profile_style.css</h1>
+    <div class="card mx-auto profile">
+        <h5 class="card-header" style="background-color:rgb(153, 185, 183);">Results Feedback</h5>
+        <div class="card-body">
+            <p><b>Hydrogen Quiz Results</b>:{{hydrogen}}%</p>
+            <p><b>Carbon Quiz Results</b>:{{carbon}}% </p>
+            <p><b>Oxygen Quiz Results</b>:{{oxygen}}% </p>
+            <p><b>Helium Quiz Results</b>:{{helium}}% </p>
+            <p><b>Iron Quiz Results</b>:{{iron}}% </p>
+            <p><b>Nitrogen Quiz Results</b>:{{nitrogen}}% </p>
+            <p style="font-size: 20px;"><b>Congratulations on trying out the quizzes! Try to achieve 100 in all!</b> </p>
+        </div>
 </body>
+
 </html>

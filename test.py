@@ -1,21 +1,22 @@
-import unittest
+import unittest, os
+from app import app, db, User
 
-from app import User
-
-
-class UserModelTest(unittest.TestCase):
+class scoreModelTest(unittest.TestCase):
     def setUp(self):
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://'
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
         db.create_all()
+        user1 = User(username="Testcase", password="kasjdnfkasj", email="example@gmail.com", carbonResults=50)
+        db.session.add(user1)
+        db.session.commit()
 
     def tearDown(self):
         db.session.remove()
         db.drop_all()
 
-    def test_password(self):
-        u = User(username ='james123', password="james123")
-        self.assertFalse(u.login('josh'))
-        self.assertTrue(u.login('james123'))
+    def test_result(self):
+        user1 = User.query.filter_by(username="Testcase").first()
+        self.assertFalse(user1.carbonResults == 10)
+        self.assertTrue(user1.carbonResults == 60)
 
 if __name__=='__main__':
     unittest.main(verbosity = 2)

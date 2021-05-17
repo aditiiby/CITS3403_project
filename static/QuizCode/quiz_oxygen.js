@@ -94,9 +94,18 @@ const quizDiv = document.getElementById("quizDiv");
 
 //Resultsed displayed 
 //Still need to round the results to 2 decimal places
+
+
+
 function displayResults(){
     quizDiv.remove();
     quiz.style.display = "none";
     endQuizContent.style = 'display';
     displayGrade.innerHTML = "Your Grade was " + ((grade/quizQuestions.length)*100).toFixed() + "%";
+    $.ajax({
+        type: 'POST',
+        url: '/oxygen',
+        data: JSON.stringify(((grade/quizQuestions.length)*100).toFixed()),
+        contentType: 'application/json'  
+    });
 }

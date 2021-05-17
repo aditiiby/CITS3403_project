@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, request, jsonify
 from flask_wtf import FlaskForm
 import sqlalchemy
 from wtforms import StringField, PasswordField
@@ -6,6 +6,7 @@ from wtforms.validators import InputRequired, Email, Length
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy  import SQLAlchemy
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user, UserMixin
+import json
 
 
 
@@ -28,17 +29,23 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(20), unique=True)
     password = db.Column(db.String(30))
     email = db.Column(db.String(60), unique=True)
+    hydrogenResults = db.Column(db.Integer)
+    heliumResults = db.Column(db.Integer)
+    carbonResults = db.Column(db.Integer)
+    nitrogenResults = db.Column(db.Integer)
+    oxygenResults = db.Column(db.Integer)
+    ironResults = db.Column(db.Integer)
 
     def getId(self):
         return self.id
 
 class LoginForm(FlaskForm):
-    username = StringField('username', validators=[InputRequired(), Length(min=8, max=20)])
+    username = StringField('username', validators=[InputRequired(), Length(min=3, max=20)])
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=30)])
 
 class RegisterForm(FlaskForm):
     email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=60)])
-    username = StringField('username', validators=[InputRequired(), Length(min=8, max=20)])
+    username = StringField('username', validators=[InputRequired(), Length(min=3, max=20)])
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=30)])
 
 
@@ -49,32 +56,72 @@ def home():
 def index():
     return render_template('index.html')
 
-@app.route('/lessons')
+@app.route('/lessonsLoggedin')
+def lessonsLoggedin():
+    return render_template('lessonsLoggedin.html')
+
+@app.route('/lessons',methods=['GET','POST'])
 def lessons():
-    return render_template('lessons.html')
+    if current_user.is_authenticated:
+        return render_template('lessonsLoggedin.html', oxygen = oxygenCheck(), helium = heliumCheck(), iron = ironCheck(), 
+        hydrogen = hydrogenCheck(), carbon =  carbonCheck(), nitrogen = nitrogenCheck())
+    else:
+        return render_template('lessons.html')
 
-@app.route('/Hydrogen')
-def Hydrogen ():
+
+@app.route('/hydrogen',methods=['GET','POST'])
+def hydrogen ():
+    if request.method == 'POST':
+        result = request.get_json()
+        if result != None:
+            current_user.hydrogenResults = result
+            db.session.commit()
     return render_template('Hydrogen.html')
+    
 
-@app.route('/carbon')
+@app.route('/carbon',methods=['GET','POST'])
 def carbon():
+    if request.method == 'POST':
+        result = request.get_json()
+        if result != None:
+            current_user.carbonResults = result
+            db.session.commit()
     return render_template('carbon.html')
 
-@app.route('/helium')
+@app.route('/helium',methods=['GET','POST'])
 def helium():
+    if request.method == 'POST':
+        result = request.get_json()
+        if result != None:
+            current_user.heliumResults = result
+            db.session.commit()
     return render_template('helium.html')
 
-@app.route('/iron')
+@app.route('/iron',methods=['GET','POST'])
 def iron():
+    if request.method == 'POST':
+        result = request.get_json()
+        if result != None:
+            current_user.ironResults = result
+            db.session.commit()
     return render_template('iron.html')
 
-@app.route('/nitrogen')
+@app.route('/nitrogen',methods=['GET','POST'])
 def nitrogen():
+    if request.method == 'POST':
+        result = request.get_json()
+        if result != None:
+            current_user.nitrogenResults = result
+            db.session.commit()
     return render_template('nitrogen.html')
 
-@app.route('/oxygen')
+@app.route('/oxygen',methods=['GET','POST'])
 def oxygen():
+    if request.method == 'POST':
+        result = request.get_json()
+        if result != None:
+            current_user.oxygenResults = result
+            db.session.commit()
     return render_template('oxygen.html')
 
 @app.route('/about')
@@ -90,10 +137,43 @@ def nav():
 @login_required
 @app.route('/profile')
 def profile():
-    return render_template('profile.html')
+    if not current_user.is_authenticated:
+        return render_template('index.html')
+    return render_template('profile.html', username = current_user.username, email = current_user.email, 
+        oxygen = oxygenCheck(), helium = heliumCheck(), iron = ironCheck(), 
+        hydrogen = hydrogenCheck(), carbon =  carbonCheck(), nitrogen = nitrogenCheck())
 
-
-
+#sqlite3 was storing 0 as 'None'
+def hydrogenCheck():
+    if current_user.hydrogenResults == None:
+        return 0
+    else:
+        return current_user.hydrogenResults
+def heliumCheck():
+    if current_user.heliumResults == None:
+        return 0
+    else:
+        return current_user.heliumResults
+def carbonCheck():
+    if current_user.hydrogenResults == None:
+        return 0
+    else:
+        return current_user.carbonResults
+def nitrogenCheck():
+    if current_user.nitrogenResults == None:
+        return 0
+    else:
+        return current_user.nitrogenResults
+def oxygenCheck():
+    if current_user.oxygenResults == None:
+        return 0
+    else:
+        return current_user.oxygenResults
+def ironCheck():
+    if current_user.ironResults == None:
+        return 0
+    else:
+        return current_user.ironResults
 
 @app.route('/login',methods=['GET','POST'])
 def login():
@@ -103,7 +183,7 @@ def login():
         if user:
             if form.password.data == user.password:
                 login_user(user)
-                return render_template('lessons.html')
+                return render_template('index.html')
         return render_template('login.html', form = form)
     return render_template('login.html', form = form)
 
@@ -111,12 +191,11 @@ def login():
 def signup():
     form = RegisterForm()
     if form.validate_on_submit():
-        newUser = User(username = form.username.data, password = form.password.data, email = form.email .data)
+        newUser = User(username = form.username.data, password = form.password.data, email = form.email.data)
         db.session.add(newUser)
         db.session.commit()
-
-        return render_template('profile.html')
-
+        login_user(newUser)
+        return render_template('index.html')
     return render_template('signup.html', form = form)
 
 @app.route('/logout')

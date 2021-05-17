@@ -99,4 +99,10 @@ function displayResults(){
     quiz.style.display = "none";
     endQuizContent.style = 'display';
     displayGrade.innerHTML = "Your Grade was " + ((grade/quizQuestions.length)*100).toFixed() + "%";
+    $.ajax({
+        type: 'POST',
+        url: '/carbon',
+        data: JSON.stringify(((grade/quizQuestions.length)*100).toFixed()),
+        contentType: 'application/json'  
+    });
 }

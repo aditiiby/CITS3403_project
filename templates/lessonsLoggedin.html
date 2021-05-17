@@ -25,6 +25,23 @@
         });
     </script>
 
+    <div id="Progress">
+        <h1>Progress Bar</h1>
+        <div id="OutsideBar">
+            <div id="InsideBar"></div>
+        </div>
+    </div>
+    <script>
+         const progressBar = document.getElementById("InsideBar")
+
+        /* this here will check the if there is a result in the DB and if so will add 16.67 otherwise the progress will be 0*/
+        console.log("I've been called");
+        progress = ('{{hydrogen}}'/6 + '{{helium}}'/6 +'{{carbon}}'/6 +'{{nitrogen}}'/6 +'{{oxygen}}'/6 +'{{iron}}'/6).toFixed()
+    
+        progressBar.innerHTML =  progress + "%"
+        progressBar.style.width = progress + "%"
+    </script>    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="box">
         <div class="container">
