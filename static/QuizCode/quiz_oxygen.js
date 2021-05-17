@@ -12,7 +12,7 @@ const startbutton = document.getElementById("start")
 // The Quiz element
 var quiz = document.getElementById("quiz");
 
-function startQuiz(){
+function startQuiz() {
     //Hiding the infomation elements
     info4.remove();
     info5.remove();
@@ -27,26 +27,25 @@ function startQuiz(){
 }
 
 // The questions, multi choice answers and the answer for the quiz
-let quizQuestions = [
-    {
+let quizQuestions = [{
         question: "Oxygen consists of __ protons and __ electrons. Fill in the blanks.",
-        choiceA : "8 & 8",
-        choiceB : "3 & 9",
-        choiceC : "Oxygen and air",
-        correct : "A"
-    },{
-        question : "Oxygen makes up roughly ___ % of the earth's atomsphere and __ % of the mass of the earth's crust. Fill in the blanks.",
-        choiceA : "21 & 50",
-        choiceB : "10 & 20",
-        choiceC : "50 & 20",
-        correct : "A"
+        choiceA: "8 & 8",
+        choiceB: "3 & 9",
+        choiceC: "Oxygen and air",
+        correct: "A"
+    }, {
+        question: "Oxygen makes up roughly ___ % of the earth's atomsphere and __ % of the mass of the earth's crust. Fill in the blanks.",
+        choiceA: "21 & 50",
+        choiceB: "10 & 20",
+        choiceC: "50 & 20",
+        correct: "A"
     },
     {
-        question : "Oygen was discovered by who?",
-        choiceA : "Tim French",
-        choiceB : "Arnold Schwarzenegger",
-        choiceC : "Joseph Priestley",
-        correct : "C"
+        question: "Oygen was discovered by who?",
+        choiceA: "Tim French",
+        choiceB: "Arnold Schwarzenegger",
+        choiceC: "Joseph Priestley",
+        correct: "C"
     }
 ];
 
@@ -64,7 +63,7 @@ let grade = 0;
 
 
 //Function to display the quiz
-function displayQuestion(){ 
+function displayQuestion() {
     let q = quizQuestions[currentQuestion];
     question.innerHTML = "Question " + (currentQuestion + 1) + ": " + q.question;
     choiceA.innerHTML = q.choiceA;
@@ -73,15 +72,14 @@ function displayQuestion(){
 }
 
 //Checking the Answers and moving onto the next question
-function checkAnswer(answer){
-    if(answer==quizQuestions[currentQuestion].correct){
+function checkAnswer(answer) {
+    if (answer == quizQuestions[currentQuestion].correct) {
         grade++;
     }
-    if(currentQuestion < (quizQuestions.length -1)){
+    if (currentQuestion < (quizQuestions.length - 1)) {
         currentQuestion++;
         displayQuestion();
-    }
-    else{
+    } else {
         displayResults();
     }
 }
@@ -97,15 +95,15 @@ const quizDiv = document.getElementById("quizDiv");
 
 
 
-function displayResults(){
+function displayResults() {
     quizDiv.remove();
     quiz.style.display = "none";
     endQuizContent.style = 'display';
-    displayGrade.innerHTML = "Your Grade was " + ((grade/quizQuestions.length)*100).toFixed() + "%";
+    displayGrade.innerHTML = "Your Grade was " + ((grade / quizQuestions.length) * 100).toFixed() + "%";
     $.ajax({
         type: 'POST',
         url: '/oxygen',
-        data: JSON.stringify(((grade/quizQuestions.length)*100).toFixed()),
-        contentType: 'application/json'  
+        data: JSON.stringify(((grade / quizQuestions.length) * 100).toFixed()),
+        contentType: 'application/json'
     });
 }
