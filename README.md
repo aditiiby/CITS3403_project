@@ -83,10 +83,19 @@ This should start the app running on localhost at port 5000, i.e. [http://localh
 We have implemented unit tests with test.py
 * Tests whether database stored the correct information
 * If results stored in database changed 
-* If its updated the changes will be recorded
+* If results are updated the changes will be recorded
 
 To run unit tests
 `python3 test.py`
+
+To run selenium tests, make sure that you have the 
+appropriate web driver installed. In this case it should be geckodriver for Firefox, 
+and it assumes that it is installed in the test directory.
+Then start the webserver in TestingConfig, and run
+`python3 clientSideTest.py`
+
+
+
 
 ## Deployment
 
@@ -136,3 +145,6 @@ HTML (n.d.). In _Html_ https://www.w3schools.com/
 
 FLASK (n.d.).https://prettyprinted.com/flasksql
 
+Pair Up. (2019, May 15). In _GitHub_ https://github.com/drtnf/cits3403-pair-up/blob/master/readme.md
+
+Pair Up. (2019, May 15). In _GitHub_ https://github.com/drtnf/cits3403-pair-up/
